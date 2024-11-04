@@ -465,7 +465,7 @@ input:checked + .slider:after {
 }
 
 .panah-kanan:hover{
-    translate: 100rem;
+    translate: 90rem;
 }
 
 .footer { 
