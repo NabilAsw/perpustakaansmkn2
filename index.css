@@ -348,7 +348,7 @@ input:checked + .slider:after {
 .dokumentasi img {
     flex-grow: 1;
     flex-basis: 200;
-    padding-left: 24px;
+    padding-left: 30px;
     border-radius: 10px 10px;
     size: 100%;
 }
