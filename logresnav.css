@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background-image: url('pexels-njeromin-18981044.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+.login-container { 
+    background-color: transparent;
+    border: 1px solid #f4f4f4;
+    color: #f4f4f4;
+    backdrop-filter: blur(20px);
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    max-width: 400px; 
+} 
+.login-container h1 { 
+    margin-bottom: 20px; 
+    color: #f4f4f4; 
+}
+
+.login-container input {
+    padding: 8px 50px;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    background-color: transparent;
+}
+
+.ID {
+    background-image: url('https://th.bing.com/th/id/R.98f7ba11c0008416714360d79b38fcc3?rik=2Ejragac6mGlFQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-thin-line-user-icon-2232.png&ehk=xfJZe9qWw%2fORWGP1VnUnQPT3r09SLw4ihK%2fyNms%2b2OA%3d&risl=&pid=ImgRaw&r=0');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 18px 15px;
+}
+
+.Institusi {
+    background-image: url('https://www.seekpng.com/png/full/67-671789_free-high-quality-school-sekolah-vector-png.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 18px 15px;
+}
+
+.submit-btn {
+    background-image: url('https://www.pngall.com/wp-content/uploads/5/Checklist-Logo-PNG.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 17px 15px;
+    color: #f4f4f4;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgba(255, 255, 255, 0.329);
+}
+
+.key {
+    background-image: url('https://rumahpintarid.com/wp-content/uploads/2017/12/gambar-kunci.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 17px 15px;
+    color: #f4f4f4;
+}

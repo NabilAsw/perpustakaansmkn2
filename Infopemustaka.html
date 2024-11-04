@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="wartaperpus.css" rel="stylesheet" />
+    <script src="catalog.js" defer></script>
+    <title>| Perpustakaan Digital SMKN 2 Kota Bandung</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="logo-smkn.png" alt="Logo" class="logo">
+                <span class="company-name">informasi Pemustaka</span>
+            </div>
+        
+            <div class="navbar-center">
+                <ul class="menu">
+                    <li><a href="index.html" style="color: #49a8e8;">Beranda</a></li>
+                    <li><a href="catalog.html" style="color: #49a8e8;">Katalog buku</a></li>
+                    <li><a href="logresnav.html" style="color: #49a8e8;">Pengunjung</a></li>
+                    <li><a href="admin.html" style="color: #49a8e8;">Area Admin</a></li>
+                    <li><a href="anggota.html" style="color: #49a8e8;">Area Anggota</a></li>
+                </ul>
+            </div>
+        
+            <div class="navbar-right">
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <div class="dropdown"> 
+                    <button id="dropdownBtn" onclick="toggleDropdown()"> 
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"> 
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/> 
+                        </svg> 
+                    </button> 
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="index.html">Beranda</a>
+                        <a href="catalog.html">Katalog buku</a>
+                        <a href="logresnav.html">Pengunjung</a>
+                        <a href="admin.html">Area Admin</a>
+                        <a href="anggota.html">Area Anggota</a>
+                    </div> 
+                </div>
+            </div>
+        </nav>
+        <div class="image-bg">
+            <img src="pexels-njeromin-18981044.jpg" class="r-perpus"/>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="judul">Informasi Pemustaka</h1><hr>
+        <div class="info">
+            <div class="waktu-post">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                <p>2022-12-12 13:37:14</p>
+            </div>
+            <h2>KEANGGOTAAN PEMUSTAKA</h2>
+            <p>Untuk dapat meminjam salah satu dari koleksi perpustakaan, di wajibkan mendaftar sebagai anggota perpustakaan terlebih dahulu. Syarat untuk menjadi anggota perpustakaan cukup mengisi formulir pendaftaran anggota perpustakaan dan mengikuti ketentuan ketentuan yang telah dibuat.</p>
+        </div>
+
+        <div class="info">
+            <h2>SYARAT DAN KETENTUAN PINAJAMAN</h2>
+            <ul>
+                <li style="margin-top: 15px;">1. Dapat meminjam koleksi perpustakaan sebanyak 3 eksemplar.</li>
+                <li>2. Wajib menjaga kebersihan dan kondisi fisik koleksi.</li>
+                <li>3. Pinjaman berlangsung 7 hari.</li>
+                <li>4. Dapat memperpanjang pinjaman koleksi dengan melapor kepada pustakawan.</li>
+                <li>5. Dikenakan sanksi denda sebesar Rp. 2000 /eksemplar per hari apabila tidak mengembalikan eksemplar sesuai tanggal yang tertera saat pinjaman.</li>
+                <li>6. Dikenakan sanksi penggantian eksemplar apabila hilang atau rusak.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer"> 
+        <div class="logo-footer"> 
+            <img src="logo-smkn.png"> 
+        </div> 
+        <div class="info-footer"> 
+            <p><strong>Perpustakaan SMK Negeri 2 Bandung</strong></p> 
+            <p>Jl. Ciliwung No.4, Cihapit, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40114</p> 
+            <p>Email: smkn2bandung@sch.id | Fax: (021) 9172638</p> 
+            <p>&copy; 2024 Perpustakaan SMK Negeri 2 Bandung. All rights reserved.</p> 
+        </div> 
+    </footer>
+</body>
+</html>

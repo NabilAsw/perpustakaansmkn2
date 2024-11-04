@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital SMKN 2 Bandung</title>
+    <link href="wartaperpus.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="logo-smkn.png" />
+    <script src="catalog.js" defer></script>
+    <title>| Perpustakaan Digital SMKN 2 Kota Bandung</title>
+</head>
+
+<header>
+    <nav class="navbar">
+            <div class="navbar-left">
+                <img src="logo-smkn.png" alt="Logo" class="logo">
+                <span class="company-name">Berita</span>
+            </div>
+        
+            <div class="navbar-center">
+                <ul class="menu">
+                    <li><a href="index.html" style="color: #49a8e8;">Beranda</a></li>
+                    <li><a href="catalog.html" style="color: #49a8e8;">Katalog buku</a></li>
+                    <li><a href="logresnav.html" style="color: #49a8e8;">Pengunjung</a></li>
+                    <li><a href="admin.html" style="color: #49a8e8;">Area Admin</a></li>
+                    <li><a href="anggota.html" style="color: #49a8e8;">Area Anggota</a></li>
+                </ul>
+            </div>
+        
+            <div class="navbar-right">
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <div class="dropdown"> 
+                    <button id="dropdownBtn" onclick="toggleDropdown()"> 
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"> 
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/> 
+                        </svg> 
+                    </button> 
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="index.html">Beranda</a>
+                        <a href="catalog.html">Katalog buku</a>
+                        <a href="logresnav.html">Pengunjung</a>
+                        <a href="admin.html">Area Admin</a>
+                        <a href="anggota.html">Area Anggota</a>
+                    </div> 
+                </div>
+            </div>
+    </nav>
+    <div class="image-bg">
+        <img src="pexels-njeromin-18981044.jpg" class="r-perpus"/>
+    </div>
+</header>
+
+<body>
+    <h1 class="judul">Warta Perpustakaan</h1><hr>
+    <p class="banyak-berita">We have 3 news for you!</p>
+    <div class="info">
+        <div class="waktu-post">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            <p>2022-12-12 13:37:14</p>
+        </div>     
+        <h2>Informasi Koleksi</h2>
+        <p>KOLEKSI PERPUSTAKAAN Kami memiliki beberapa macam koleksi yang terdapat di perpustakaan kamu, dimulai dari Fiksi, Non Fiksi, Referensi hingga berbagai macam Buku Mata Pelajran serta koleksi muatan lokal. Kami juga memiliki koleksi koran harian dan majalah bulanan.</p>
+    </div>
+
+    <div class="info">
+        <div class="waktu-post">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            <p>2022-12-12 13:37:14</p>
+        </div>
+        <h2>Informasi Pemustaka</h2>
+        <p>Untuk dapat meminjam salah satu dari koleksi perpustakaan, di wajibkan mendaftar sebagai anggota perpustakaan terlebih dahulu. Syarat untuk menjadi anggota perpustakaan cukup mengisi formulir pendaftaran anggota perpustakaan dan mengikuti ketentuan ketentuan yang telah dibuat.</p>
+        <div class="Pemustaka">
+            <a href="Infopemustaka.html">Lanjutkan Membaca</a>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="waktu-post">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            <p>2022-12-12 13:37:14</p>
+        </div>
+        <h2>Informasi Operasional</h2>
+        <ul>
+            <li><b>Senin - Jum'at :</b></li>
+            <li>Buka : 08.00 WIB</li>
+            <li>Tutup : 16.00 WIB</li>
+            <li><b>Sabtu - Minggu :</b></li>
+            <li>Tutup</li>
+            <li><b>Libur Nasional :</b></li>
+            <li>Tutup</li>
+        </ul>
+    </div>
+
+    <footer class="footer"> 
+        <div class="logo-footer"> 
+            <img src="logo-smkn.png"> 
+        </div> 
+        <div class="info-footer"> 
+            <p><strong>Perpustakaan SMK Negeri 2 Bandung</strong></p> 
+            <p>Jl. Ciliwung No.4, Cihapit, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40114</p> 
+            <p>Email: smkn2bandung@sch.id | Fax: (021) 9172638</p> 
+            <p>&copy; 2024 Perpustakaan SMK Negeri 2 Bandung. All rights reserved.</p> 
+        </div> 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body.light-mode {
+    color: #292e32;
+    background-color: #f4f4f4;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+body.dark-mode {
+    background-color: #232222;
+    color: #ffaa00;
+    transition: background-color 0.4s, color 0.4s;
+    .info {
+        background-color: #302f2f;
+        filter: drop-shadow(0px 0px 15px #e31b2288);
+    }
+    .navbar {
+        background-color: black;
+        color: white;
+        }
+        .menu li a {
+        color: white;
+        }
+        .banyak-berita {
+            padding: 15px;
+            margin: 20px 45px;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #bee5eb;
+            background-color: #0c5460;
+            border:1px solid #0c5460;
+            border-radius: 5px;
+        }
+        .dropdown button svg { 
+            width: 30px; 
+            height: auto; 
+            color: #49a8e8;
+        }
+        
+        .dropdown-content {
+            background-color: #383636c4;
+            border-radius: 7px;
+        } 
+
+        .dropdown-content a {
+            color: #49a8e8;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f4f4f4ce;
+        }
+}
+
+.navbar {
+    display: flex;
+    border: 1px solid #747373;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    filter: drop-shadow(0px 0px 40px rgba(34, 97, 207, 0.5));
+    color: #49a8e8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+
+/* Dropdown Button */ 
+.dropdown { 
+    position: relative; 
+    display: none; /* Initially hide the dropdown */ 
+    margin-right: 30px;
+    border-radius: 7px;
+} /* Dropdown Content (Hidden by Default) */ 
+
+.dropdown-content { 
+    display: none; 
+    position: absolute; 
+    background-color: #f9f9f9; 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+    right: 5px;
+    top: 60px;
+    border-radius: 7px;
+} 
+
+/* Links inside the dropdown */ 
+.dropdown-content a {
+    color: black; 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block; 
+    transition: 0.3s ease;
+} 
+
+/* Change color of dropdown links on hover */ 
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    border-radius: 7px;
+} 
+
+/* Style the button */ 
+.dropdown button { 
+    background-color: transparent; /* Remove background */ 
+    border: none; /* Remove border */ 
+    cursor: pointer; 
+} 
+
+/* Add image to the button */ 
+.dropdown button svg { 
+    width: 30px; 
+    height: auto; 
+    color: #555;
+} 
+
+/* Change the background color of the button when the dropdown content is shown */ 
+.dropdown:hover button svg { 
+    opacity: 0.8; /* Make image slightly transparent on hover */ 
+} 
+
+/* Media Query for showing the dropdown on smaller screens */ 
+@media (max-width: 900px) { 
+    .dropdown { 
+        display: inline-block; /* Show the dropdown */ 
+    }
+    
+    .navbar-left {
+        display: none;
+    }
+
+    .menu li a {
+        display: none;
+    }
+
+    .hilang {
+        display: none;
+    }
+
+    .navbar-right {
+        display: flex;
+    }
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    color: #49a8e8;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-center {
+    display: flex;
+    color: #49a8e8;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.navbar-right .btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.navbar-right .btn:hover {
+    background-color: rgba(34, 97, 207, 0.5);
+}
+
+.search-social {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 57px;
+    height: 30px;
+    right: 30px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #49a8e8;
+    transition: 0.4s;
+}
+  
+.slider:after {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #ffdd00;
+    backdrop-filter: transparent;
+    transition: 0.4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #6b6666;
+    transition: 0.4s;
+}
+  
+input:checked + .slider {
+    background-color: #1d425b;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+  
+input:checked + .slider:after {
+    background-color: #6b6666;
+}
+  
+input:checked + .slider:after {
+    transform: translateX(24px);
+}
+  
+/* Tambahkan efek untuk rounded slider */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+  
+.slider.round:after {
+    border-radius: 50%;
+}
+
+.image-bg {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.image-bg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.judul {
+    margin: 50px 0px 15px 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banyak-berita {
+    padding: 15px;
+    margin: 20px 45px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border:1px solid #bee5eb;
+    border-radius: 5px;
+}
+.info {
+    background-color: rgb(255, 255, 255);
+    margin: 20px 45px;
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 10px #6c757d83);
+}
+
+.info p {
+    margin-top: 25px;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.info li {
+    list-style-type: none;
+}
+
+.info a {
+    text-decoration: none;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    border-radius: 5px;
+    padding: 6px 12px;
+    color: white;
+    margin-top: 10px;
+    transition: 1s ease;
+}
+
+.info a:hover {
+    background-color: #17a2b8;
+}
+
+.footer { 
+    background-color: #333; 
+    color: white;
+    padding: 20px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: space-between; 
+    text-align: center; 
+} 
+
+.footer .logo-footer { 
+    flex: 1 1 100px; /* Adjust based on logo size */ 
+    text-align: end; 
+} 
+
+.footer .logo-footer img { 
+    width: 100px; /* Adjust as needed */ 
+    height: auto; 
+} 
+    
+.footer .info-footer { 
+    flex: 5; 
+    margin: 10px 0; 
+} 
+
+.footer .info-footer p { 
+    margin: 5px 0; 
+} 
+
+@media (max-width: 600px) { 
+    .footer { 
+        flex-direction: column; 
+        text-align: center; 
+    } 
+    
+    .footer .logo-footer, .footer .info-footer { 
+        text-align: center; 
+        flex: 1 1 100%; 
+    } 
+}
+
+.waktu-post {
+    display: flex;
+}
+
+.waktu-post p {
+    position: relative;
+    bottom: 25px;
+    left: 8px;
+}
+
+@media (max-width: 365.32px) {
+    .navbar-right {
+        position: absolute;
+        right: 28px;
+    }
+}

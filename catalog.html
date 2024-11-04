@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="catalog.css" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="logo-smkn.png" />
+    <script src="catalog.js" defer></script>
+    <title>| Perpustakaan Digital SMKN 2 Kota Bandung</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="logo-smkn.png" alt="Logo" class="logo">
+                <span class="company-name">Katalog buku</span>
+            </div>
+        
+            <div class="navbar-center">
+                <ul class="menu">
+                    <li><a href="index.html" style="color: #49a8e8;">Beranda</a></li>
+                    <li><a href="wartaperpus informasi.html" style="color: #49a8e8;">Berita</a></li>
+                    <li><a href="logresnav.html" style="color: #49a8e8;">Pengunjung</a></li>
+                    <li><a href="admin.html" style="color: #49a8e8;">Area Admin</a></li>
+                    <li><a href="anggota.html" style="color: #49a8e8;">Area Anggota</a></li>
+                </ul>
+            </div>
+        
+            <div class="navbar-right">
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <div class="dropdown"> 
+                    <button id="dropdownBtn" onclick="toggleDropdown()"> 
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"> 
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/> 
+                        </svg> 
+                    </button> 
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="index.html">Beranda</a>
+                        <a href="wartaperpus informasi.html">Berita</a>
+                        <a href="logresnav.html">Pengunjung</a>
+                        <a href="admin.html">Area Admin</a>
+                        <a href="anggota.html">Area Anggota</a>
+                    </div> 
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="foto-katalog">
+        <a href="laskarpelangi.html"><img src="Laskar Pelangi.jpg"></a>
+        <a href="negeribuku.html"><img src="Negeri 5 Menara.jpg"></a>
+        <a><img src="Inestable.jpg"></a>
+        <a href="Dilan.html"><img src="Dilan Dia Adalah Dilanku 1991.jpg"></a>
+        <a><img src="http://elib.smkn2bandung.id:3333/images/docs/Girls_In_The_Dark.jpg.jpg"></a>
+        <a><img src="http://elib.smkn2bandung.id:3333/images/docs/Kakak_Kelas.JPG.JPG"></a>
+        <a><img src="http://elib.smkn2bandung.id:3333/images/docs/Rolandara.jpg"></a>
+        <a><img src="http://elib.smkn2bandung.id:3333/images/docs/Dear%20Nathan.jpg"></a>
+        <a><img src="http://elib.smkn2bandung.id:3333/images/docs/Lelaki%20Tua%20dan%20Laut.jpg"></a>
+        <a><img src="http://elib.smkn2bandung.id:3333/images/docs/Lovasket%206,%20Game%20Over.jpg"></a>
+        </div>
+    </main>
+
+    <footer class="footer"> 
+        <div class="logo-footer"> 
+            <img src="logo-smkn.png"> 
+        </div> 
+        <div class="info-footer"> 
+            <p><strong>Perpustakaan SMK Negeri 2 Bandung</strong></p> 
+            <p>Jl. Ciliwung No.4, Cihapit, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40114</p> 
+            <p>Email: smkn2bandung@sch.id | Fax: (021) 9172638</p> 
+            <p>&copy; 2024 Perpustakaan SMK Negeri 2 Bandung. All rights reserved.</p> 
+        </div> 
+    </footer>
+</body>
+</html>
