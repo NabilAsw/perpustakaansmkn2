@@ -17,12 +17,13 @@ body.dark-mode {
     background-color: black;
     color: white;
     }
+    
     .menu li a {
     color: white;
     }
 
     .judul {
-        color: #f4f4f4;
+        color: #ffaa00;
     }
 }
 
