@@ -263,38 +263,39 @@ input:checked + .slider:after {
     border-radius: 50%;
 }
 
-.image-bg {
-    width: 100%;
-    height: 600px;
-    position: relative;
-    overflow: hidden;
-    object-fit: cover;
+.header { 
+    background-image: url('abundant-collection-antique-books-wooden-shelves-generated-by-ai.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: white; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
 }
 
-.image-bg img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0px 0px 15px 15px;
-}
+.header h1 { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: white; 
+    filter: drop-shadow(0px 0px 40px rgba(53, 53, 53, 0.742)); 
+    max-height: fit-content; 
+    max-width: fit-content; 
+} 
 
-.header {
-    position: absolute;
-    bottom: 110px;
-    margin: 0px 0px 0px 80px;
-    width: 35%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    filter: drop-shadow(0px 0px 40px rgba(53, 53, 53, 0.742));
-}
+@media (max-width: 768px) { 
+    .header h1 { 
+        font-size: 24px; /* Smaller font size for smaller screens */ 
+    } 
+} 
 
-.judul {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    color: #333;
-    margin-top: 20px;
+@media (max-width: 480px) { 
+    .header h1 { 
+        font-size: 18px; /* Even smaller font size for very small screens */ 
+    } 
 }
 
 .flex-card {
